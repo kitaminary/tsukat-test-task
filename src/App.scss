@@ -32,7 +32,8 @@
     box-shadow: 4px 5px 4px rgb(47, 47, 47);
     visibility: visible;
     opacity: 1;
-    transition: all 0.3s ease-in;
+    transform: scale(100%);
+    transition: all 0.3s ease;
 
 
     &__close {
@@ -44,6 +45,7 @@
     }
 
     &--unactive {
+      transform: scale(0);
       visibility: hidden;
       opacity: 0;
     }

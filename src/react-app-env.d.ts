@@ -6,7 +6,7 @@ export interface State {
 }
 
 export type TodoItem = {
-  id: number,
+  id: number | string,
   userId: number,
   completed: boolean,
   title: string,

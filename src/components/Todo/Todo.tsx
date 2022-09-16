@@ -47,13 +47,13 @@ const Todo: React.FC<Props> = ({ todo }) => {
     setFormEditToggler(false);
   };
 
-  const deleteTodo = (id: number) => {
+  const deleteTodo = (id: number | string) => {
     dispatch(
       setTodos(todos.filter((todoitem: TodoItem) => todoitem.id !== id))
     );
   };
 
-  const completedTodo = (id: number) => {
+  const completedTodo = (id: number | string) => {
     dispatch(
       setTodos(
         todos.map((todoitem: TodoItem) => {

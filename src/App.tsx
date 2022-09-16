@@ -4,6 +4,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './App.scss';
+import uniqid from 'uniqid';
 import classNames from 'classnames';
 import { setTodos, setUsers } from './store/actions';
 import TodoList from './components/TodoList/TodoList';
@@ -55,7 +56,7 @@ const App: React.FC = () => {
           {
             title,
             userId: userInside.id,
-            id: todos.length + 1,
+            id: uniqid(),
             date: datetime,
             completed,
           },
@@ -69,7 +70,7 @@ const App: React.FC = () => {
           {
             title,
             userId: newUser.id,
-            id: todos.length + 1,
+            id: uniqid(),
             date: datetime,
             completed,
           },
