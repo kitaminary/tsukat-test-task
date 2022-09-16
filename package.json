@@ -1,6 +1,6 @@
 {
   "homepage": "/",
-  "name": "react-typescript-starter-pack",
+  "name": "tsukat-test-task",
   "version": "0.1.0",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
@@ -11,7 +11,8 @@
     "@types/node": "^12.20.10",
     "@types/react": "^17.0.4",
     "@types/react-dom": "^17.0.3",
-    "classnames": "^2.3.1",
+    "classnames": "^2.3.2",
+    "random-date-generator": "^1.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^8.0.2",
